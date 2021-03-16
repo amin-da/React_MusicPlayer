@@ -9,7 +9,7 @@ body {
 h3,
 h4 {
   font-weight: 400;
-  color: rgb(100, 100, 100) ;
+  color: rgb(100, 100, 100);
 }
 h1,
 h2,
@@ -19,3 +19,4 @@ h3 {
 @import "./player";
 @import "./song";
 @import "./library";
+@import "./nav";
