@@ -10,10 +10,10 @@ const LibrarySong = ({
   isPlaying,
   setSongs,
 }) => {
-  const songSelectHandler = () => {
+  const songSelectHandler = async () => {
     // const selectedSongs = songs.filter((state) => state.id === id);
     // setCurrentSong(selectedSongs[0]);
-    setCurrentSong(song);
+    await setCurrentSong(song);
     //add Actice States
     const newSongs = songs.map((song) => {
       if (song.id === id) {
@@ -32,7 +32,7 @@ const LibrarySong = ({
   };
 
   //cehck if the song is playing?
-  playAudio(isPlaying, audioRef);
+  if (isPlaying) audioRef.current.play();
 
   return (
     <div
