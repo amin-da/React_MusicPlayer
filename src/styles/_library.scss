@@ -2,7 +2,7 @@
   position: fixed;
   left: 0;
   top: 0;
-  width: 20rem;
+  width: 21rem;
   height: 100%;
   background-color: rgb(208, 208, 230);
   box-shadow: 2px 2px 50px rgb(184, 182, 182);
@@ -20,6 +20,7 @@
   align-items: center;
   padding: 1rem 2rem 1rem 2rem;
   cursor: pointer;
+  transition: background 0.3s ease;
   img {
     width: 30%;
   }
@@ -64,4 +65,10 @@
 .active-library {
   transform: translateX(0);
   opacity: 1;
+}
+
+@media screen and (max-width:768px){
+  .library{
+    width: 100%;
+  }
 }

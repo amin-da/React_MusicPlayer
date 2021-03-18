@@ -10,7 +10,7 @@
   display: flex;
   height: 1rem;
   align-items: center;
-  
+
   p {
     padding: 1rem;
   }
@@ -42,7 +42,6 @@ input[type="range"]::-webkit-slider-thumb {
   border-radius: 1rem;
   overflow: hidden;
   background: linear-gradient();
-  
 }
 .animate-track {
   background: rgb(204, 204, 204);
@@ -64,5 +63,14 @@ input[type="range"]::-webkit-slider-thumb {
   padding: 1rem;
   svg {
     cursor: pointer;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .time-contorol {
+    width: 90%;
+  }
+  .play-contorol {
+    width: 60%;
   }
 }
